@@ -4,6 +4,10 @@
    margin: 0;
    background-color: #F8FAFD;
 }
+
+p{
+    font-family: Open Sans;
+}
 .navbar{  
     position: fixed;
     top: 0;
@@ -31,16 +35,18 @@
     list-style: none;
     cursor: pointer;
     font-size: 0.75rem;
-    text-decoration: none;
     font-family: Open Sans;
     font-weight: 600;
     display: flex;
     justify-content: space-between;
-    color:#333333
-    
-    
+    color:#333333;
+}
+.item-arrow {
+    list-style: none;
+    margin-left: -15px;
     
 }
+
 .btn-download{
     background-color: transparent;
     color:#EA6371;
@@ -52,6 +58,7 @@
     font-size: 0.75rem;
     font-family: Open Sans;
     margin-right: 2.5rem;
+    
 }
 /* 
 #navbar-logo{
@@ -104,7 +111,7 @@
     padding: 200px;
 }
 .h1-banner {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     font-family: Open Sans;
     text-align: center;
     color: #333333;
@@ -113,13 +120,15 @@
     padding: 10px;
     font-family: Open Sans;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color:#666666
 }
 .button-download{
     display: flex;
     gap: 10px;
     justify-content: center;
+   
 }
 .button {
     display: flex;
@@ -130,9 +139,49 @@
     color: white;
     text-decoration:none;
     border-radius: 2rem;
+    
 }
 .header-iphone {
     width: 80%;
     height: 80%;
     padding: 15% 10%;
 }
+
+.banner-iphone{
+    margin-bottom: -200px;
+}
+/* Container icons */
+.banner-icons{
+    margin-top: -200px;
+}
+
+.icon-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    justify-content:space-around;
+    margin: 0% 10%;
+    margin-top: 20px;
+  }
+  
+  .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    display:inline-block;  
+  }
+  
+  .img-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .p-icon {
+    text-align: center;
+    color:#333333;
+    font-weight: 500;
+    padding: 0%;
+  } 
