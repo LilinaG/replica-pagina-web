@@ -2,11 +2,59 @@
 * {
    padding: 0; 
    margin: 0;
+   background-color: #F8FAFD;
 }
-body{
-    background-color: #F8FAFD;
+.navbar{  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-#header{
+.navbar-logo{
+    width: 6rem;
+    height: auto;
+    margin-left: 5%;
+}
+.navbar-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: px;
+
+}
+.item{
+    margin-right: 20px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 0.75rem;
+    text-decoration: none;
+    font-family: Open Sans;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    color:#333333
+    
+    
+    
+}
+.btn-download{
+    background-color: transparent;
+    color:#EA6371;
+    border: 0.10rem solid #EA6371;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 0.75rem;
+    font-family: Open Sans;
+    margin-right: 2.5rem;
+}
+/* 
+#navbar-logo{
     width: 100%;
     position: fixed;
     top: 0;
@@ -16,22 +64,26 @@ body{
     align-items: center;
     padding: 0 5%;
     height: 100 px;
+    
 }
 .logo{
-    height: 164px;
-    width: 55px;
+    height: 130px;
+    width: 100px;
 }
 .menu{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: stretch;
     list-style: none;
+    font-size: 0.75rem;
+   
 }
 .item {
     margin: 0 15px;
     font-family: Open Sans;
     font-size: 18px;
     font-weight: 600px;
+    font-style: bold;
     cursor: pointer;
     color:black;
 }
@@ -39,6 +91,48 @@ body{
     color: #EA6371;
 }
 .btn{
-    padding: 10px 24px;
-
+    padding: 10px 10px;
+    border: #EA6371 solid;
+    border-radius: 45%;
+    font-weight: 600;
+    color: #EA6371;
+    border-color: #EA6371;
+    cursor: pointer;
+}
+ */
+.banner {
+    padding: 200px;
+}
+.h1-banner {
+    font-size: 3.5rem;
+    font-family: Open Sans;
+    text-align: center;
+    color: #333333;
+}
+.p-banner{
+    padding: 10px;
+    font-family: Open Sans;
+    text-align: center;
+    font-size: 0.8rem;
+    color:#666666
+}
+.button-download{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    padding: 0.9em 1.3em;
+    background-color: #EA6371;
+    font-family: Open Sans;
+    color: white;
+    text-decoration:none;
+    border-radius: 2rem;
+}
+.header-iphone {
+    width: 80%;
+    height: 80%;
+    padding: 15% 10%;
 }
