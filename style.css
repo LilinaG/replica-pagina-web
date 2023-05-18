@@ -9,7 +9,7 @@
 * {
    padding: 0; 
    margin: 0;
-   background-color: #F8FAFD;
+   /*background-color: #F8FAFD;*/
 }
 
 p{
@@ -28,6 +28,7 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #F8FAFD
 }
 .navbar-logo{
     width: 6rem;
@@ -69,7 +70,8 @@ p{
     font-size: 0.75rem;
     font-family: Open Sans;
     margin-right: 2.5rem;
-    
+    display: flex;
+    flex-wrap: wrap;
 }
 /* 
 #navbar-logo{
@@ -120,6 +122,7 @@ p{
  */
 .banner {
     padding: 200px;
+    background-color: #F8FAFD
 }
 .h1-banner {
     font-size: 3.3rem;
@@ -156,6 +159,7 @@ p{
     width: 80%;
     height: 80%;
     padding: 15% 10%;
+    max-width: 100%;
 }
 
 .banner-iphone{
@@ -164,6 +168,9 @@ p{
 /* Container icons */
 .banner-icons{
     margin-top: -300px;
+    width: 100%;
+    background-color: #F8FAFD;
+    margin-bottom: -50px;
 }
 
 .icon-list {
@@ -172,6 +179,7 @@ p{
     list-style-type: none;
     padding: 0;
     justify-content:space-around;
+    flex-wrap: wrap;
     margin: 0% 10%;
     margin-top: 20px;
   }
@@ -196,6 +204,7 @@ p{
     font-weight: 600;
     padding: 0%;
   } 
+
   /* SECTION DESCRIPTION */
 
   .container-description{
@@ -204,12 +213,16 @@ p{
     margin-top: 8%;
     margin-right: 300px;
     gap: 10%;
+    background-color: #F8FAFD;
+    margin-bottom: -145px;
+    
 
   }
   .img-my-picks{
     width: 536px;
     height: 600px;
     margin-left: 400px;
+    padding-bottom: 250px;
   }
 
   h2{
@@ -253,13 +266,26 @@ p{
 }
 
 /* SECTION TRACKING */
+#section-tracking{
+    background-color: #EAEFF6;
+    width: 100%;
+    max-width: 100%;
+}
 
-#container-tracking{
+.container-tracking{
     display: flex;
     justify-content: space-around;
-    margin-top: 8%;
     margin-right: 300px;
     gap: 10%;
+    width: 100%;
+    padding-top: 150px;
+
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    margin-left: 400px;
+    background-color: #EAEFF6;
 }
 
 .p-tracking{
@@ -268,10 +294,10 @@ p{
     margin-top: 5%;
 }
 
-.list-traking{
+.list-tracking{
     font-family: Open Sans;
     color:#666666;
-    list-style-type: square;
+    list-style-type: none;
     font-size: 1rem;
     line-height: 1.5rem;
     text-align: justify;
@@ -279,8 +305,21 @@ p{
     text-align: left;
     line-height: 1.9rem;
     margin-top: 3%;
+    
+}
+.p-list-tracking{
+    padding-left: 20px; /* Añadimos un espacio a la izquierda para la imagen */
+    background-image: url('./images/green-check.png'); /* Especificamos la ruta de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: left top; /* Posiciona la imagen a la izquierda y al centro verticalmente */
+    background-size: 4.6%;
+    
+}
+.calendar{
+    margin-right: 400px;
 }
   .img-calendar{
     width: 536px;
     height: 600px;
+    background-color: #EAEFF6;
   }
