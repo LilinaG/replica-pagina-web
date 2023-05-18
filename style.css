@@ -28,7 +28,7 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F8FAFD
+    background-color: #F8FAFD;
 }
 .navbar-logo{
     width: 6rem;
@@ -175,7 +175,7 @@ p{
     width: 80%;
     height: 80%;
     padding: 15% 10%;
-    max-width: 100%;
+    
 }
 
 .banner-iphone{
@@ -231,9 +231,6 @@ p{
     gap: 10%;
     background-color: #F8FAFD;
     margin-bottom: -145px;
-   
-    
-
   }
   .img-my-picks{
     width: 536px;
@@ -441,5 +438,58 @@ p{
   
   .button-privacy {
     margin-left: 10px;
+    
   }
-  
+
+  /* USER TESTIMONIALS */
+
+  #user-testimonials{
+    background-color: #F8FAFD;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  }
+
+  .title-testimonials{
+    text-align: center;
+  }
+  .container-testimonials-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap:10%;
+  }
+  .stars{
+    padding-left: 15%;
+    margin-top: 10%;
+  }
+  .testimonials{
+    text-align: center;
+    font-style: italic;
+  }
+  .name {
+    text-align: center;
+    font-weight: 600;
+    color:#333333;
+  }
+  .container-logos{
+    display: flex;
+    background-color: #EAEFF6;
+  }
+  .container-testimonials-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap:10%;
+  }
