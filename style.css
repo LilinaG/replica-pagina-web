@@ -151,9 +151,25 @@ p{
     background-color: #EA6371;
     font-family: Open Sans;
     color: white;
-    text-decoration:none;
+    text-decoration: none;
     border-radius: 2rem;
-    
+    font-weight: 600;
+    vertical-align: middle;
+    border: none;
+    border-bottom: #EA6371;
+}
+.button-icon{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.button:hover {
+    background-color:transparent;
+    color: #EA6371;
+    border: #EA6371;
+    border-bottom: #EA6371;
+}
+.button-icon:hover{
+    color: #EA6371;
 }
 .header-iphone {
     width: 80%;
@@ -215,6 +231,7 @@ p{
     gap: 10%;
     background-color: #F8FAFD;
     margin-bottom: -145px;
+   
     
 
   }
@@ -269,14 +286,13 @@ p{
 #section-tracking{
     background-color: #EAEFF6;
     width: 100%;
-    max-width: 100%;
 }
 
 .container-tracking{
     display: flex;
     justify-content: space-around;
     margin-right: 300px;
-    gap: 10%;
+    gap: 12%;
     width: 100%;
     padding-top: 150px;
 
@@ -287,6 +303,78 @@ p{
     margin-left: 400px;
     background-color: #EAEFF6;
 }
+
+.btn-schedule{ 
+    display: flex;
+    gap: 3%;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 0.1em;
+    background-color: #916BDF;
+    font-family: Open Sans;
+    color: white;
+    text-decoration:none;
+    text-align: left;
+    font-weight: 700;
+    width: 154px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    border: none;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 0.1em;
+    background-color: white;
+    font-family: Open Sans;
+    color: #666666;
+    text-decoration:none;
+    text-align: center;
+    font-weight: 700;
+    width: 154px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle ;
+    border: none;
+    
+}
+.calendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 0.1em;
+    background-color: white;
+    font-family: Open Sans;
+    color: #666666;
+    text-decoration:none;
+    text-align: left;
+    font-weight: 700;
+    width: 154px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    border:none;
+}
+  
+  .button-icon-1 {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  .button-icon-2 {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
 
 .p-tracking{
     text-align: left;
@@ -300,7 +388,6 @@ p{
     list-style-type: none;
     font-size: 1rem;
     line-height: 1.5rem;
-    text-align: justify;
     margin-right: 150px;
     text-align: left;
     line-height: 1.9rem;
@@ -312,14 +399,47 @@ p{
     background-image: url('./images/green-check.png'); /* Especificamos la ruta de la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: left top; /* Posiciona la imagen a la izquierda y al centro verticalmente */
-    background-size: 4.6%;
-    
+    background-size:0.9rem;
 }
 .calendar{
     margin-right: 400px;
+    margin-top: 10%;
 }
   .img-calendar{
     width: 536px;
     height: 600px;
     background-color: #EAEFF6;
+   
   }
+  .button-container {
+    display: flex;
+  }
+  
+  .button-terms{
+    padding: 10px 20px;
+    background-color: #EA6371;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  .button-privacy{
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    border: black;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  .button-terms {
+    margin-right: 10px;
+  }
+  
+  .button-privacy {
+    margin-left: 10px;
+  }
+  
