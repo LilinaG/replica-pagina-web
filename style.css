@@ -1,3 +1,10 @@
+@media only screen and (min-width: 768px) {
+    /* Estilos CSS para tablets y escritorios */
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    /* Estilos CSS para dispositivos móviles */
+  }
 
 * {
    padding: 0; 
@@ -7,6 +14,10 @@
 
 p{
     font-family: Open Sans;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color:#666666;
+    text-align: justify;
 }
 .navbar{  
     position: fixed;
@@ -148,11 +159,11 @@ p{
 }
 
 .banner-iphone{
-    margin-bottom: -200px;
+    margin-bottom: -350px;
 }
 /* Container icons */
 .banner-icons{
-    margin-top: -200px;
+    margin-top: -300px;
 }
 
 .icon-list {
@@ -182,6 +193,94 @@ p{
   .p-icon {
     text-align: center;
     color:#333333;
-    font-weight: 500;
+    font-weight: 600;
     padding: 0%;
   } 
+  /* SECTION DESCRIPTION */
+
+  .container-description{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8%;
+    margin-right: 300px;
+    gap: 10%;
+
+  }
+  .img-my-picks{
+    width: 536px;
+    height: 600px;
+    margin-left: 400px;
+  }
+
+  h2{
+    font-family: Open Sans;
+    color: #333333;
+    font-size: 2.5rem;
+    text-align: left;
+    margin-right: 100px;
+  }
+
+  .p-organize-your-time{
+    margin-right: 150px;
+    text-align: left;
+    line-height: 1.9rem;
+    margin-top: 5%;
+}
+
+.list-organize-your-time{
+    font-family: Open Sans;
+    color:#666666;
+    list-style-type: square;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    margin-right: 150px;
+    text-align: left;
+    line-height: 1.9rem;
+    margin-top: 3%;   
+}
+
+.lightbox{
+    display: flex;
+    justify-content: center;
+    padding: 0.9em 1.3em;
+    background-color: #EA6371;
+    font-family: Open Sans;
+    color: white;
+    text-decoration:none;
+    border-radius: 2rem;
+    margin-top: 5%;
+}
+
+/* SECTION TRACKING */
+
+#container-tracking{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8%;
+    margin-right: 300px;
+    gap: 10%;
+}
+
+.p-tracking{
+    text-align: left;
+    line-height: 1.9rem;
+    margin-top: 5%;
+}
+
+.list-traking{
+    font-family: Open Sans;
+    color:#666666;
+    list-style-type: square;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    margin-right: 150px;
+    text-align: left;
+    line-height: 1.9rem;
+    margin-top: 3%;
+}
+  .img-calendar{
+    width: 536px;
+    height: 600px;
+  }
