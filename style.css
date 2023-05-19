@@ -540,6 +540,42 @@ header{
     margin-bottom: 2%;
   }
 
+  .full-width-line {
+    margin-top: 5%;
+    width: 100%;
+    border: none;
+    border-top: 1px solid #666666;
+  }
+
+  footer {
+    background-color: #F8FAFD;
+    padding: 20px 40px;
+    font-size: Open Sans;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
+  .footer-column {
+    flex-basis: 25%;
+    text-align: center;
+  }
+  .social-media{
+    width: 200px;
+  }
+  .footer-column p {
+    margin: 10px 0;
+  }
+  .t-footer{
+    font-weight: 600;
+  }
+  .p-copyright{
+    margin-top: 2%;
+    text-align: center;
+  }
 
 
 
