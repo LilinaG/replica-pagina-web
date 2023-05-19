@@ -10,27 +10,30 @@
 </head>
 
 <body>
-    <header class="navbar">
 
-    <div class="navbar-logo"><img src="./images/logo.svg"></div>
+    <header>
+        <div class="navbar-logo"><img src="./images/logo.svg"></div>
+        <input type="checkbox" id="check">
+        <label for="check" class="show-menu">
+            &#8801
+        </label>
 
-    <div>
-    <ul class="navbar-menu">
-        <li class="item">DESCRIPTION</li>
-        <li class="item">FEATURES</li>
-        <li class="item">SCREENS</li>
-        <li class="item">EXTRA</li>
-        <li class="item-arrow"><img src="./images/down-arrow.png"></li>
-    </ul>  
-    </div>
-
-    <div class="navbar-download">
+    <nav class="menu">
+        <a href="#">DESCRIPTION</a>
+        <a href="#">FEATURES</a>   
+        <a href="#">SCREENS</a>   
+        <a href="#">EXTRA</a>
+        <img src="./images/down-arrow.png" class="arrow">
         <a href="#" class="btn-download">DOWNLOAD</a>
-    </div>
+        <label for="check" class="hide-menu">
+            &#215
+        </label>   
+    </nav>
     </header>
+
     
 <!-- BANNER SECTION -->
-    <section class="banner-iphone">
+    <section id="banner-iphone">
       <div class="banner">
         <h1 class="h1-banner">Mobile App Landing Page</h1>
         <p class="p-banner">Start focusing on your goals and get more things done with Sync mobile applications.
@@ -53,7 +56,7 @@
 
 <!-- BANNER ICONS -->
 
-<section class="banner-icons">   
+<section id="banner-icons">   
 <ul class="icon-list">
         
        <li class="icon"> 
@@ -75,7 +78,7 @@
 
 
     <!-- SECTION DESCRIPTION -->
-<section>
+<section id="description">
 <div class="container-description">
     <div class="my-picks">
         <img src="./images/description-1-app.png" class="img-my-picks">
@@ -89,7 +92,7 @@
          <li>Analyse and evaluate your current status and productivity</li>
          <li>Begin monitoring your day to day routine with Sync app</li>  
          <li>See the improved results in no more than a couple of weeks</li> 
-        <div class="lightbox">LIGHTBOX</div>
+        <div class="btn-lightbox">LIGHTBOX</div>
         </ul>
     </div>
 </div>
@@ -128,7 +131,7 @@
           </div>
     </div>
 
-        <div class="calendar">
+        <div class="two-calendar">
             <img src="./images/description-2-app.png" class="img-calendar">
         </div>
     </div>
@@ -142,25 +145,34 @@
 
     <h2 class="title-testimonials">User Testimonials</h2>
 
+
     <div class="container-testimonials-1">
-
-    <div class="testimonial-1">
-    <img src="./images/stars.png" class="stars">
-    <p class="testimonials"> I love using Sync for my personal development needs. It meets all my requirements and it actually helps a lot with focusing skills.</p>
-    <p class="name">Rick Jones - Designer</p>
-    </div>
-    <div class="testimonial-2">
-    <img src="./images/stars.png" class="stars">
-    <p class="testimonials">After trying out a large number of personal coaching apps I decided to give Sync a try and what a wonderful surprise it was.</p>
-    <p class="name">Lynda Marquez - Developer</p>
-    </div>
-    <div class="testimonial-3">
-    <img src="./images/stars.png" class="stars">
-    <p class="testimonials">Never dreamed I could learn so fast how to focus on my personal goals and improve my life to levels I never thought possible.</p>
-    <p class="name">Jay Frisco - Marketer</p>
-    </div>
-
-    <div class="container-logos">
+        <ul class="testimonial-list-1">
+          <li class="testimonial-item">
+            <div class="stars">
+              <img src="./images/stars.png" class="img-stars">
+              <p class="testimonials">I love using Sync for my personal development needs. It meets all my requirements and it actually helps a lot with focusing skills.</p>
+              <p class="name">Rick Jones - Designer</p>
+            </div>
+          </li>
+          <li class="testimonial-item">
+            <div class="stars">
+              <img src="./images/stars.png" class="img-stars">
+              <p class="testimonials">After trying out a large number of personal coaching apps I decided to give Sync a try and what a wonderful surprise it was.</p>
+              <p class="name">Lynda Marquez - Developer</p>
+            </div>
+          </li>
+          <li class="testimonial-item">
+            <div class="stars">
+              <img src="./images/stars.png" class="img-stars">
+              <p class="testimonials">Never dreamed I could learn so fast how to focus on my personal goals and improve my life to levels I never thought possible.</p>
+              <p class="name">Jay Frisco - Marketer</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    
+      <div class="container-logos">
         <img src="./images/customer-logo-1.png">
         <img src="./images/customer-logo-2.png">
         <img src="./images/customer-logo-3.png">
@@ -170,24 +182,68 @@
 
  </div>
 
-
  <div class="container-testimonials-2">
-    <img src="./images/stars.png" class="stars">
-    <p class="testimonials">I got so much value from using Sync in my daily life for which I am very grateful and would recommend it to everybody.</p>
-    <p class="name">Frank Gibson - Manager</p>
+    <ul class="testimonial-list-2">
+      <li class="testimonial-item">
+        <div class="stars">
+          <img src="./images/stars.png" class="img-stars">
+          <p class="testimonials">I love using Sync for my personal development needs. It meets all my requirements and it actually helps a lot with focusing skills.</p>
+          <p class="name">Rick Jones - Designer</p>
+        </div>
+      </li>
+      <li class="testimonial-item">
+        <div class="stars">
+          <img src="./images/stars.png" class="img-stars">
+          <p class="testimonials">After trying out a large number of personal coaching apps I decided to give Sync a try and what a wonderful surprise it was.</p>
+          <p class="name">Lynda Marquez - Developer</p>
+        </div>
+      </li>
+      <li class="testimonial-item">
+        <div class="stars">
+          <img src="./images/stars.png" class="img-stars">
+          <p class="testimonials">Never dreamed I could learn so fast how to focus on my personal goals and improve my life to levels I never thought possible.</p>
+          <p class="name">Jay Frisco - Marketer</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
 
-    <img src="./images/stars.png" class="stars">
-    <p class="testimonials">If you have great goals but can't figure out a way to keep focused then you should definitely give Sync a try and see the results</p>
-    <p class="name">Rita Longmile - Designer</p>
+<!-- SECTION ICONS AND NUMBERS -->
 
-    <img src="./images/stars.png" class="stars">
-    <p class="testimonials">I've been looking for a great organizer app for such a long time but now I am really happy that I found Sync. It's beeen working great</p>
-    <p class="name">Jones Smith - Developer</p>
-</div>
+<section id="container-icons-numbers">
+    <ul>
+        <li class="icon-number">
+        <img src="./images/people-icon.png" class="last-icons">
+        <p class="numbers">231</p>
+        <p class="leyend">Happy Users</p>
+        </li>
+
+        <li class="icon-number">
+            <img src="./images/only-code.png" class="last-icons">
+            <p class="numbers">385</p>
+            <p class="leyend">Issues Solved</p>
+        </li>
+
+        <li class="icon-number">
+            <img src="./images/settings-icon.png" class="last-icons">
+            <p class="numbers">159</p>
+            <p class="leyend">Good Reviews</p>
+        </li>
+        
+        <li class="icon-number">
+            <img src="./images/conversation-icon.png" class="last-icons">
+            <p class="numbers">127</p>
+            <p class="leyend">Case Studies</p>
+        </li>
 
 
-
-
+        <li class="icon-number">
+            <img src="./images/only-rocket.png" class="last-icons">
+            <p class="numbers">211</p>
+            <p class="leyend">Orders Received</p>
+        </li>
+    </ul>
 
 </section>
 

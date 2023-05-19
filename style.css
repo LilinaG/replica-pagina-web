@@ -1,15 +1,8 @@
-@media only screen and (min-width: 768px) {
-    /* Estilos CSS para tablets y escritorios */
-  }
-  
-  @media only screen and (max-width: 1200px) {
-    /* Estilos CSS para dispositivos móviles */
-  }
 
 * {
    padding: 0; 
    margin: 0;
-   /*background-color: #F8FAFD;*/
+   font-family: Open Sans;
 }
 
 p{
@@ -19,123 +12,83 @@ p{
     color:#666666;
     text-align: justify;
 }
-.navbar{  
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F8FAFD;
-}
-.navbar-logo{
-    width: 6rem;
-    height: auto;
-    margin-left: 5%;
-}
-.navbar-menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-left: px;
+/* HEADER */
+header{
+  height: 75px;
+  background-color: #F8FAFD;
+  padding: 0 50px;  /*Para centrarlo añadimos 50px a cada lado de padding*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+}   
+.navbar-logo{
+  width: 6rem;
+  height: auto;
+  margin-left: 5%;
 }
-.item{
-    margin-right: 20px;
-    list-style: none;
-    cursor: pointer;
-    font-size: 0.75rem;
-    font-family: Open Sans;
-    font-weight: 600;
-    display: flex;
-    justify-content: space-between;
-    color:#333333;
-}
-.item-arrow {
-    list-style: none;
-    margin-left: -15px;
-    
+
+.menu a{
+  color:#666666;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0 10px;
+  transition: 0.4s;
 }
 
 .btn-download{
-    background-color: transparent;
-    color:#EA6371;
-    border: 0.10rem solid #EA6371;
-    padding: 8px 16px;
-    text-decoration: none;
-    border-radius: 2rem;
-    font-weight: 600;
-    font-size: 0.75rem;
-    font-family: Open Sans;
-    margin-right: 2.5rem;
-    display: flex;
-    flex-wrap: wrap;
+  background-color:#EA6371;
+  color: white;
+  border: 0.5rem solid #EA6371;
+  padding: 8px 16px;
+  border-radius: 2rem;
+  margin-right: 2.5rem;
+ 
+
 }
-/* 
-#navbar-logo{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
-    height: 100 px;
-    
+.show-menu,
+.hide-menu{
+  font-size: 30px;
+  cursor: pointer;
+  display: none;  /*para que solo se vea en la versión responsive*/
+  transition: 0.4s;
+     
+  
+
 }
-.logo{
-    height: 130px;
-    width: 100px;
+.show-menu{
+  order:1; /*para que sea el primero en salir a la derecha por defecto vendría situado a la izqueirda*/
 }
-.menu{
-    display: flex;
-    justify-content: flex-end;
-    align-items: stretch;
-    list-style: none;
-    font-size: 0.75rem;
-   
+.menu a:hover,
+.show-menu:hover,
+.hide-menu:hover{
+  color: #EA6371;
 }
-.item {
-    margin: 0 15px;
-    font-family: Open Sans;
-    font-size: 18px;
-    font-weight: 600px;
-    font-style: bold;
-    cursor: pointer;
-    color:black;
+#check{
+  display: none;
 }
-.item:hoover {
-    color: #EA6371;
-}
-.btn{
-    padding: 10px 10px;
-    border: #EA6371 solid;
-    border-radius: 45%;
-    font-weight: 600;
-    color: #EA6371;
-    border-color: #EA6371;
-    cursor: pointer;
-}
- */
-.banner {
-    padding: 200px;
+
+
+/* BANNER SECTION */
+
+#banner-iphone{
+    padding: 50px 0px;
     background-color: #F8FAFD
 }
 .h1-banner {
+    padding: 20px 0;
     font-size: 3.3rem;
     font-family: Open Sans;
     text-align: center;
     color: #333333;
 }
 .p-banner{
-    padding: 10px;
+    padding:20px 200px;
     font-family: Open Sans;
     text-align: center;
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
     color:#666666
 }
 .button-download{
@@ -162,28 +115,23 @@ p{
     vertical-align: middle;
     margin-right: 5px;
 }
-.button:hover {
-    background-color:transparent;
-    color: #EA6371;
-    border: #EA6371;
-    border-bottom: #EA6371;
-}
-.button-icon:hover{
-    color: #EA6371;
-}
+
 .header-iphone {
-    width: 80%;
-    height: 80%;
-    padding: 15% 10%;
+    width: 70%;
+    height: 70%;
+    padding: 50px 50px;
     
 }
 
-.banner-iphone{
+/*.banner-iphone{
     margin-bottom: -350px;
 }
+
+
 /* Container icons */
-.banner-icons{
-    margin-top: -300px;
+
+#banner-icons{
+    padding: 10px 50px 50px 50px;
     width: 100%;
     background-color: #F8FAFD;
     margin-bottom: -50px;
@@ -223,6 +171,14 @@ p{
 
   /* SECTION DESCRIPTION */
 
+  #description{
+    padding: 0 50px;
+    background-color: #F8FAFD;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+  }
   .container-description{
     display: flex;
     justify-content: space-around;
@@ -230,6 +186,7 @@ p{
     margin-right: 300px;
     gap: 10%;
     background-color: #F8FAFD;
+   
     margin-bottom: -145px;
   }
   .img-my-picks{
@@ -246,7 +203,7 @@ p{
     text-align: left;
     margin-right: 100px;
   }
-
+  
   .p-organize-your-time{
     margin-right: 150px;
     text-align: left;
@@ -267,7 +224,7 @@ p{
     margin-top: 3%;   
 }
 
-.lightbox{
+.btn-lightbox{
     display: flex;
     justify-content: center;
     padding: 0.9em 1.3em;
@@ -281,6 +238,7 @@ p{
 
 /* SECTION TRACKING */
 #section-tracking{
+    padding: 0 50px;
     background-color: #EAEFF6;
     width: 100%;
 }
@@ -398,7 +356,7 @@ p{
     background-position: left top; /* Posiciona la imagen a la izquierda y al centro verticalmente */
     background-size:0.9rem;
 }
-.calendar{
+.two-calendar{
     margin-right: 400px;
     margin-top: 10%;
 }
@@ -444,52 +402,166 @@ p{
   /* USER TESTIMONIALS */
 
   #user-testimonials{
+    padding: 0 50px;
+    width: 100%;
     background-color: #F8FAFD;
-    display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+    
   }
 
   .title-testimonials{
     text-align: center;
+    padding: 60px;
   }
-  .container-testimonials-1{
+  .container-testimonials-1,
+  .container-testimonials-2 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin-bottom: 20px;
-    width: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
-    gap:10%;
+    padding: 20px 300px;
+    gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
   }
-  .stars{
-    padding-left: 15%;
-    margin-top: 10%;
+  
+  .testimonial-list-1,
+  .testimonial-list-2 {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
   }
+  
+  .testimonial-item {
+    flex-basis: 33%;
+    text-align: center;
+    padding: 10px 30px;
+  }
+  
+  .img-stars {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .testimonials,
+  .name {
+    text-align: center;
+  }
+  
   .testimonials{
     text-align: center;
     font-style: italic;
+    padding: 20px 20px;
   }
   .name {
     text-align: center;
     font-weight: 600;
     color:#333333;
   }
-  .container-logos{
+ 
+  .container-logos {
+    margin:auto;
+    width: 1110px;
+    max-width: 100%;
+    height: 110px;
+    background-color: #ffffff;
     display: flex;
-    background-color: #EAEFF6;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
   }
-  .container-testimonials-2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+  
+  .container-logos img {
+    width: 156px;
+    height: 31px;
+    margin: 5px; /* Espacio entre los logos */
+  }
+  
+  /* SECTION ICONS AND NUMBERS */
+
+  #container-icons-numbers {
+    padding: 20px 20px;
     width: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
-    gap:10%;
+    background-color: #EAEFF6;
+
   }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .icon-number {
+    flex-basis: 20%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .last-icons {
+    display: block;
+    margin: 0 auto;
+    width: 100px; /* Ajusta el ancho de los iconos según sea necesario */
+    height: 100px; /* Ajusta la altura de los iconos según sea necesario */
+  }
+  
+  .numbers {
+    font-size: 50px;
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+    font-weight: 800;
+  }
+  
+  .leyend {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  
+  
+
+
+
+  @media only screen and (min-width: 768px) {
+    /* Estilos CSS para tablets y escritorios */
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    /* Estilos CSS para dispositivos móviles */
+  }
+  /* RESPONSIVE */
+
+@media (max-widht: 768px){    /*cuando se llegue a esta medida que se comorte de la siguiente manera*/
+  /*Header*/
+  .show-menu,
+  .hide-menu{
+     display: block;
+  }
+  .menu{
+     position: fixed;
+     width: 100%;
+     height: 100vh;  /*que ocupe el 100% desde cualquier dispositivo*/
+     background-color: black;
+     left: 0;
+     right: -100%; /*para que se vea desde la derecha*/
+     top: 0;
+     text-align: center;
+     padding: 100px 0;
+     z-index: 100;   /*para que si hay tros elementos que no se pisen y el menú siempre esté por encima*/
+     transition: 0.8s;
+  }
+  .menu a{
+     display: block;
+     padding: 15px;
+  }
+  .hide-menu{
+     position:absolute;
+     top: 40px;
+     right: 40px;
+  }
+  #check:checked ~ .menu{
+    right: 0;
+  }
+
+  
+}
