@@ -518,7 +518,28 @@ header{
   }
   
   
-  
+  #only-phone{
+    padding: 0px 20px;
+    width: 100%;
+    background-color: #F8FAFD;
+  }
+
+  .purple-phone {
+    display: flex;
+    padding-top: 80px;
+    justify-content: center;
+  }
+  .phone-2{
+    height: 60vh;
+  }
+  .p-phone{
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+    line-height: 1.7rem;
+    margin-bottom: 2%;
+  }
+
 
 
 
