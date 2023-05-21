@@ -1,9 +1,10 @@
 
 * {
-   padding: 0; 
-   margin: 0;
-   font-family: Open Sans;
+  padding: 0; 
+  margin: 0;
+  font-family: Open Sans;
 }
+
 
 p{
     font-family: Open Sans;
@@ -16,10 +17,12 @@ p{
 header{
   height: 75px;
   background-color: #F8FAFD;
-  padding: 0 50px;  /*Para centrarlo añadimos 50px a cada lado de padding*/
+  padding: 0; 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  
 
 }   
 .navbar-logo{
@@ -38,12 +41,15 @@ header{
 }
 
 .btn-download{
-  background-color:#EA6371;
-  color: white;
-  border: 0.5rem solid #EA6371;
+  background-color: white;
+  color: #EA6371;
+  border: solid #EA6371;
   padding: 8px 16px;
   border-radius: 2rem;
-  margin-right: 2.5rem;
+  margin: 10rem;
+  text-decoration: none;
+  font-weight: 600;
+
  
 
 }
@@ -74,7 +80,8 @@ header{
 
 #banner-iphone{
     padding: 50px 0px;
-    background-color: #F8FAFD
+    background-color: #F8FAFD;
+    width: 100%;
 }
 .h1-banner {
     padding: 20px 0;
@@ -84,7 +91,7 @@ header{
     color: #333333;
 }
 .p-banner{
-    padding:20px 200px;
+    padding:20px 0px;
     font-family: Open Sans;
     text-align: center;
     font-size: 1rem;
@@ -117,21 +124,19 @@ header{
 }
 
 .header-iphone {
-    width: 70%;
-    height: 70%;
+    width: 930px;
+    height: 590px;
     padding: 50px 50px;
+    display: block;
+    margin: 0 auto;
     
-}
-
-/*.banner-iphone{
-    margin-bottom: -350px;
 }
 
 
 /* Container icons */
 
 #banner-icons{
-    padding: 10px 50px 50px 50px;
+    padding: 10px 0px 50px 0px;
     width: 100%;
     background-color: #F8FAFD;
     margin-bottom: -50px;
@@ -172,25 +177,31 @@ header{
   /* SECTION DESCRIPTION */
 
   #description{
-    padding: 0 50px;
+    
+    
     background-color: #F8FAFD;
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: center;
   }
   .container-description{
     display: flex;
-    justify-content: space-around;
-    margin-top: 8%;
-    margin-right: 300px;
+    flex-direction: row;
+    justify-content: center;
+    padding-top:142px;
     gap: 10%;
-    background-color: #F8FAFD;
-   
-    margin-bottom: -145px;
+    background-color: #F8FAFD; 
+  }
+
+  .my-picks{
+    margin-left: 470px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
   }
   .img-my-picks{
-    width: 536px;
+    width: 100%;
     height: 600px;
     margin-left: 400px;
     padding-bottom: 250px;
@@ -202,11 +213,20 @@ header{
     font-size: 2.5rem;
     text-align: left;
     margin-right: 100px;
+    text-align: center;
   }
   
+  .organize-your-time{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 470px;
+  }
+
   .p-organize-your-time{
     margin-right: 150px;
-    text-align: left;
+    text-align: center;
     line-height: 1.9rem;
     margin-top: 5%;
 }
@@ -218,7 +238,7 @@ header{
     font-size: 1rem;
     line-height: 1.5rem;
     text-align: justify;
-    margin-right: 150px;
+    padding: 150px 150px;
     text-align: left;
     line-height: 1.9rem;
     margin-top: 3%;   
@@ -235,17 +255,21 @@ header{
     border-radius: 2rem;
     margin-top: 5%;
 }
-
+.my-picks,
+  .organize-your-time {
+    flex: none;
+  }
 /* SECTION TRACKING */
 #section-tracking{
-    padding: 0 50px;
+    padding-bottom: 60px;
     background-color: #EAEFF6;
     width: 100%;
+    display: flex;
 }
 
 .container-tracking{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-right: 300px;
     gap: 12%;
     width: 100%;
@@ -257,6 +281,7 @@ header{
     flex-direction: column;
     margin-left: 400px;
     background-color: #EAEFF6;
+   
 }
 
 .btn-schedule{ 
@@ -357,13 +382,13 @@ header{
     background-size:0.9rem;
 }
 .two-calendar{
-    margin-right: 400px;
-    margin-top: 10%;
+    
+    padding-bottom: 50px;
 }
   .img-calendar{
-    width: 536px;
-    height: 600px;
-    background-color: #EAEFF6;
+    width: 505px;
+    height: 597px;
+    
    
   }
   .button-container {
@@ -398,11 +423,12 @@ header{
     margin-left: 10px;
     
   }
+  
 
   /* USER TESTIMONIALS */
 
   #user-testimonials{
-    padding: 0 50px;
+    padding: 0;
     width: 100%;
     background-color: #F8FAFD;
     
@@ -433,7 +459,7 @@ header{
   .testimonial-item {
     flex-basis: 33%;
     text-align: center;
-    padding: 10px 30px;
+    padding: 10px 0px;
   }
   
   .img-stars {
@@ -449,7 +475,7 @@ header{
   .testimonials{
     text-align: center;
     font-style: italic;
-    padding: 20px 20px;
+    padding: 20px 0px;
   }
   .name {
     text-align: center;
@@ -478,7 +504,7 @@ header{
   /* SECTION ICONS AND NUMBERS */
 
   #container-icons-numbers {
-    padding: 20px 20px;
+    padding: 20px 0px;
     width: 100%;
     background-color: #EAEFF6;
 
@@ -519,7 +545,7 @@ header{
   
   
   #only-phone{
-    padding: 0px 20px;
+    padding: 0;
     width: 100%;
     background-color: #F8FAFD;
   }
@@ -531,6 +557,8 @@ header{
   }
   .phone-2{
     height: 60vh;
+    display: block;
+    margin: 0 auto;
   }
   .p-phone{
     text-align: center;
@@ -549,7 +577,7 @@ header{
 
   footer {
     background-color: #F8FAFD;
-    padding: 20px 40px;
+    padding: 20px 0px;
     font-size: Open Sans;
   }
   
