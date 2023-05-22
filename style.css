@@ -569,21 +569,19 @@ header{
   }
 
   .full-width-line {
-    margin-top: 5%;
+    margin-top:;
     width: 100%;
     border: none;
     border-top: 1px solid #666666;
   }
 
-  footer {
-    background-color: #F8FAFD;
-    padding: 20px 0px;
-    font-size: Open Sans;
-  }
-  
+ 
   .footer-container {
     display: flex;
     justify-content: space-between;
+    background-color: #F8FAFD;
+    padding: 0px 0px;
+    font-size: Open Sans;
 
   }
   
