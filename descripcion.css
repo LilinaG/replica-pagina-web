@@ -1,0 +1,212 @@
+/*#description{
+    
+    position: absolute;
+    height: 586px;
+    left: 15px;
+    top: calc(50% - 586px/2); 
+    background-color: #F8FAFD;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .container-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 8.875em;
+    gap: 10%;
+    background-color: #F8FAFD; 
+    position: absolute;
+    width: 497px;
+    height: 586px;
+    left: 15px;
+    top: calc(50% - 586px/2);
+  }
+
+  .my-picks{
+    margin-left: 29.375em;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+  }
+  .img-my-picks{
+    width: 100%;
+    height: 487px;
+    margin-left: 25em;
+    padding-bottom: 15.625em;
+  }
+
+  h2{
+    font-family: Open Sans;
+    color: #333333;
+    font-size: 2.5rem;
+    text-align: left;
+    margin-right: 6.25em;
+    text-align: center;
+  }
+  
+  .organize-your-time{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 470px;
+    position: absolute;
+    width: 500px;
+    height: 402px;
+    left: 625px;
+    top: 80px;
+  }
+
+  .p-organize-your-time{
+    margin-right: 29.375em;
+    text-align: center;
+    line-height: 1.9rem;
+    margin-top: 5%;
+}
+
+.list-organize-your-time{
+    font-family: Open Sans;
+    color:#666666;
+    list-style-type: square;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding: 9.375em 9.375em;
+    text-align: left;
+    line-height: 1.9rem;
+    margin-top: 3%;   
+}
+
+.btn-lightbox{
+    display: flex;
+    justify-content: center;
+    padding: 0.9em 1.3em;
+    background-color: #EA6371;
+    font-family: Open Sans;
+    color: white;
+    text-decoration:none;
+    border-radius: 2rem;
+    margin-top: 5%;
+}
+.my-picks,
+  .organize-your-time {
+    flex: none;
+  }*/
+
+  #description {
+    width: 100%;
+    height: 762px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 113px;
+  }
+  
+  .container-description {
+    display: flex;
+    align-items: center;
+    padding-top: 48px;
+    padding-bottom: 128px;
+    padding-left: 405px;
+    padding-right: 113px;
+
+  }
+  
+  .my-picks {
+    text-align: center;
+  }
+  
+  .img-my-picks {
+    width: 100%;
+    height: 586px;
+  }
+  .organize-your-time {
+    text-align: left;
+    height: 402px;
+    width: 628px;
+    padding-top: 128px;
+    padding-bottom: 232px;
+    padding-left: 113px;
+    padding-right: 405x;
+  }
+
+  h2 {
+    width: 500px;
+    height: 104px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+  }
+
+  .p-organize-your-time {
+    width: 500px;
+    height: 84px;
+    left: 0px;
+    top: 128px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+/* or 175% */
+
+    display: flex;
+    align-items: center;
+
+color: #777777;
+  }
+
+  .list-organize-your-time {
+    text-align: left;
+    list-style-type: square;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    display: block;
+    align-items: center;
+    color: #777777;
+}
+
+  
+  @media (max-width: 768px) {
+    #description {
+      flex-direction: column;
+      padding: 0 20px;
+    }
+  
+    .container-description,
+    .my-picks,
+    .organize-your-time {
+      width: 100%;
+      text-align: center;
+    }
+}
+.btn-1 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 21px 35.39px 21px 36px;
+    width: 143.39px;
+    height: 42px;
+    left: 0px;
+    top: 360px;
+    background: #FF556E;
+    border: 2px solid #FF556E;
+    border-radius: 32px;
+    font-size: 16px;
+    color: white;
+    margin-top: 28px;
+  }
